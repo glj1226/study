@@ -20,7 +20,7 @@ void swap(int *a, int *b)
 int median(int arr[], int left, int right)
 {
 
-    int center = (left+right)/2;
+    int center = (left+right) / 2;
 
     if(arr[left] > arr[center]) swap(&arr[left], &arr[center]);
 
@@ -39,7 +39,7 @@ void qSort(int arr[], int left, int right)
     int i, j;
     int pivot;
 
-    if(left+cutoff <=  right)
+    if(left + cutoff <=  right)
     {
 
         pivot = median(arr, left, right);
@@ -69,7 +69,7 @@ void qSort(int arr[], int left, int right)
 
     }
     else
-        insertSort(arr+left,right-left+1);
+        insertSort(arr+left, right-left+1);
 
 }
 
