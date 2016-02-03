@@ -7,23 +7,30 @@
  
 #include<stdio.h>
 
-void    insertSort(int  arr[],int   length)
+void insertSort(int arr[], int length)
 {
 
-    int i   =   0,  j =   0;
-    int temp    =   0;
-    for(i   =   1;  i   <   length; i++)
+    int i = 0,
+    int j = 0;
+    int temp = 0;
+
+    for(i = 1; i < length; i++)
     {
         
-        if(arr[i-1] >   arr[i]){
-            j   =   i;
-            temp    =   arr[i];
-            while(j >   0   &&arr[j-1]    >   temp)  {
-                arr[j]  =   arr[j-1];
+        if(arr[i-1] > arr[i]){
+
+            j = i;
+            temp = arr[i];
+
+            while(j > 0 && arr[j-1] > temp)  {
+                arr[j] = arr[j-1];
                 j--;
             }
-            arr[j]  =   temp;
+
+            arr[j] = temp;
+
         }
+
     }
     
 }
